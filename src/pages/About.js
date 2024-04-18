@@ -13,6 +13,7 @@ import Copyright from "../components/Footer/Copyright";
 const About = () => {
   return (
     <div className="About">
+      {/* separate Div to give linear gradient  */}
       <div
         style={{
           background: "linear-gradient(181deg, #000 0.82%, #4A2800 209.1%)",
