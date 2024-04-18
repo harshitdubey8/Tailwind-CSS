@@ -35,10 +35,10 @@ const TrendingGames = () => {
   return (
     <div className="trending-games pt-44">
       <div
-        className="container  xl:pl-0 pl-10 lg:pr-0 pr-10"
+        className="container  xl:pl-0 pl-10  "
         style={{ maxWidth: "1146px", margin: "0px auto" }}
       >
-        <div className="flex justify-evenly  md:justify-between  pb-8 ">
+        <div className="flex justify-between  lg:pr-0 pr-10  pb-8 ">
           <h2 className="text-white font-bold  text-xl ">
             Currently Trending Games
           </h2>
@@ -55,7 +55,7 @@ const TrendingGames = () => {
           </button>
         </div>
         <div className=" flex   ">
-          <div className="flex  flex-wrap" style={{ gap: "45px" }}>
+          <div className="flex  flex-wrap" style={{ gap: " 10px 45px" }}>
             {Games.map((item) => (
               <GameCard
                 key={item.id}

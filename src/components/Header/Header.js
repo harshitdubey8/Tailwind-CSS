@@ -3,6 +3,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
+///Header Bar
 const Header = () => {
   const [sideOverIsOpen, setSideOverIsOpen] = useState(false);
 
@@ -20,7 +21,7 @@ const Header = () => {
         </h2>
         <div className="hidden lg:block  ">
           <div className="flex gap-x-10   ">
-            <div className="flex space-x-20  " style={{ alignItems: "center" }}>
+            <div className="flex space-x-20  item-center">
               <h2 className="text-white text-base">Home</h2>
               <h2 className="text-white text-base">About Us</h2>
               <h2 className="text-white text-base">Portfolio</h2>

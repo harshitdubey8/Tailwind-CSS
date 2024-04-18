@@ -42,7 +42,13 @@ const projects = [
 const RecentProjects = () => {
   return (
     <div className="Recent Projects">
-      <div className="Container  pt-36 pb-24 space-y-10  flex flex-col align-middle justify-center ">
+      <div
+        className="Container  pt-36 pb-24 space-y-10  flex flex-col item-center justify-center "
+        style={{
+          maxWidth: "1146px",
+          margin: "0px auto",
+        }}
+      >
         <h2 className="text-white  font-semibold  text-wrap text-3xl   text-center">
           Our Recent Projects
         </h2>
@@ -62,7 +68,7 @@ const RecentProjects = () => {
         >
           {projects.map((item) => (
             <img
-              style={{ width: "calc(50% - 20px)", maxWidth: "250px" }}
+              style={{ width: "calc(50% - 10px)", maxWidth: "250px" }}
               key={item.id}
               src={item.projectImg}
               alt="projects"
